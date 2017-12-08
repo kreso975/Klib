@@ -39,7 +39,7 @@ class Omega2
     const EXP_RELAY_SET = 'relay-exp -s %s %s %u';
 
     //Read DHT11 or DHT22 Values
-    const READ_DHT_SENSOR = '../lib/checkHumidity %d %s  2>&1';
+    const READ_DHT_SENSOR = '../Klib/lib/checkHumidity %d %s  2>&1';
 
     //where shoud be mount
     const ONE_WIRE_DIR = "/sys/devices/w1_bus_master1";
@@ -103,6 +103,7 @@ class Omega2
             return $output;
         }
 
+        return ("Error");
     }
 
     //
